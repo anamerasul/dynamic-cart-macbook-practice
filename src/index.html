@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./../dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- <h1 class="text-5xl font-bold  underline">
+    Hello world!
+  </h1> -->
+
+  <header>
+
+  </header>
+
+  <main>
+          <section>
+                <div class="container mx-auto">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+                                <div class="img-section w-9/12">
+                                        <div class="img-section-img mx-4 my-4 ">
+                                                <img class="img-fluid" src="./../images/mac.png" alt="" srcset="">
+                                        </div>
+                                        <div class="img-section-content mx-8 my-4 mb-8">
+                                                                                                        <h4 class="text-2xl mb-4">
+                                                                                                                Apple M1 chip with 8-core CPU with 4 performances and 4 efficiency cores ,<br>
+
+                                                        7-core GPU and 16-core Neural Engine </h4>
+
+                                                        <p class="text-xl mb-4 "><span class="text-green-800" id="memory-specfic"></span> GB unified memory</p> 
+
+                                                        <p class="text-xl mb-4"><span class="text-blue-600" id="storage-specfic"></span> GB SSD storage</p>
+
+                                                        <p class="text-xl mb-4">Two Thunderbolt / USB 4 ports Magic Mouse <br></p>
+
+                                                        <p class="text-xl mb-4">Magic KeyBoard-US English</p>
+                                        </div>
+                                </div>
+
+
+                                <div class="content-section w-9/12 ">
+                                        <div class="main-content">
+                                                <h1 class="text-5xl font-extrabold">iMac with Apple M1 Chip</h1>
+                                        </div>
+
+                                        <div class="memory-option my-16 flex flex-warp gap-4">
+                                                <p class="font-bold text-2xl">Memory</p>
+                                                <button id="memoryfourgb-btn" class="rounded-pill border-2 text-xl px-2 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white">4gb memory</button>
+                                                <button id="memoryeightgb-btn" class="rounded-pill border-2 text-xl px-2 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white"> <i class="fa-solid fa-plus"></i>8gb memory</button>
+                                                <button id="memorysixtengb-btn" class="rounded-pill border-2 text-xl px-2 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white"> <i class="fa-solid fa-plus"></i>16gb memory</button>
+                                        </div>
+                                        <div class="ssd-option my-16 flex flex-warp gap-4">
+                                                <p class="font-bold text-2xl">Storage</p>
+                                                <button id="ssd1-btn" class="rounded-pill border-2 text-xl px-4 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white">256gb ssd</button>
+                                                <button id="ssd2-btn" class="rounded-pill border-2 text-xl px-4 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white"><i class="fa-solid  fa-plus"></i>512gb ssd</button>
+                                                <button id="ssd3-btn" class="rounded-pill border-2 text-xl px-4 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white"> <i class="fa-solid fa-plus"></i>1tb ssd</button>
+                                        </div>
+                                        <div class="delivery-option my-16 flex flex-warp gap-4">
+                                                <p class="font-bold text-2xl">Delivery option</p>
+                                                <button id="regular-delivery-btn" class="rounded-pill border-2 text-xl px-4 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white">Regular 15 days delivery</button>
+                                                <button id="express-delivery-btn" class="rounded-pill border-2 text-xl px-4 py-2 uppercase bg-gray-300 hover:bg-sky-700 hover:text-white"> <i class="fa-solid fa-plus"></i>Express 5 days delivery at 40$ </button>
+                                        
+                                        </div>
+
+                                        <div class="your-selected-item gap-4 mb-8">
+                                                <p class="text-2xl uppercase my-4">You have selected</p>
+                                                <p class="text-2xl uppercase my-4">memory:<span class="uppercase" id="select-memory"></span>gb</p>
+                                                <p class="text-2xl uppercase my-4">SSD:<span class="uppercase" id="select-ssd"></span>gb</p>
+                                                <p class="text-2xl uppercase my-4">Delivery:<span class="uppercase" id="select-delivery"></span></p>
+                                        </div>
+
+                                        <div class="price-table ">
+                                                <table class="table-auto">
+                                                        <tbody>
+                                                          <tr class="bg-white border-b border-gray-200 ">
+                                                            <td class="uppercase text-2xl font-bold">base price:</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="base-price">1299</span></td>
+                                                          </tr>
+                                                          <tr class="bg-white border-b border-gray-200 ">
+                                                            <td class="uppercase text-2xl font-bold">Extra memory:</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="memory-price">0</span></td>
+                                                          </tr>
+                                                          <tr class="bg-white border-b border-gray-200 ">
+                                                            <td class="uppercase text-2xl font-bold">Extra Storage :</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="ssd-price">0</span></td>
+                                                          </tr>
+                                                          <tr class="bg-white border-b border-gray-200 ">
+                                                            <td class="uppercase text-2xl font-bold">Delivery charge :</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="delivery-price">0</span></td>
+                                                          </tr>  
+                                                          <tr class="bg-white border-b border-gray-200 ">
+                                                            <td class="uppercase text-2xl font-bold">Tax :</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="tax-price">0</span></td>
+                                                          </tr>  
+                                                          <tr class="bg-white border-b border-gray-800 ">
+                                                            <td class="uppercase text-2xl font-bold">Discount  :</td>
+                                                            <td  class="text-3xl font-medium">$<span class="mx-2" id="discount-price">0</span></td>
+                                                          </tr>  
+                                                          <tr class="bg-white border-b border-gray-800 ">
+                                                            <td class="uppercase text-2xl font-bold">total :</td>
+                                                            <td class="text-3xl font-medium">$<span class="mx-2" id="total-price">1299</span></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                      
+                                        </div>
+
+                                        <div class="promo-code-section mt-16">
+                                                <h3 class="text-3xl">Apply promo code</h3>
+                                                <p class="texl-xl" id="promo-valid-text"></p>
+
+                                                <div class="flex gap-4 mt-8 mb-4">
+                                                        <div class="promo-input">
+                                                                <input id="promo-input-value" class="px-3 py-2 border-4 rounded " placeholder="type your code">
+                                                        </div>
+                                                        <div class="promobtuun">
+                                                                <button class="bg-rose-600 px-6 py-2 rounded text-white" id="promo-btn">Apply</button>
+                                                        </div>
+
+                                                </div>
+                                               
+
+                                        </div>
+
+                                        <div class="discount-text" id="discount-text">
+                                        </div>
+                                </div>
+                        </div>
+                      </div>
+          </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/c2160a0138.js" crossorigin="anonymous"></script>
+
+  <script src="./app.js"></script>
+</body>
+</html>
