@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
+<head id="head">
+  <!-- <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./../dist/output.css" rel="stylesheet">
+  <link href="./../dist/output.css" rel="stylesheet"> -->
 </head>
-<body>
+<body id="body" onload()>
   <!-- <h1 class="text-5xl font-bold  underline">
     Hello world!
   </h1> -->
@@ -134,5 +134,20 @@
   <script src="https://kit.fontawesome.com/c2160a0138.js" crossorigin="anonymous"></script>
 
   <script src="./app.js"></script>
+
+  <script>
+
+        //   function onload(){
+
+                document.getElementById('body').addEventListener('click',function(e){
+                  document.getElementById('head').innerHTML=`                  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./../dist/output.css" rel="stylesheet">`
+          })
+                  
+        //   }
+       
+
+  </script>
 </body>
 </html>
